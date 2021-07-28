@@ -1,5 +1,5 @@
 # <img width="35" height="35" src="https://webpack.js.org/assets/icon-square-big.svg"> Webpack boilerplate
-My boilerplate for webpack 5 with babel, eslint, prettier and [other plugins.](#Dependencies)
+My boilerplate for webpack 5 with babel, eslint, prettier and [other plugins.](#file_folder-dependencies)
 
 ## :floppy_disk: Installation:
 Clone this repository and install by typing:
