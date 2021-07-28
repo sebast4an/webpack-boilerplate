@@ -1,5 +1,5 @@
 # <img width="35" height="35" src="https://webpack.js.org/assets/icon-square-big.svg"> Webpack boilerplate
-My boilerplate for webpack 5 with babel, eslint, prettier and other plugins.
+My boilerplate for webpack 5 with babel, eslint, prettier and [other plugins.](#dependencies)
 
 ## :floppy_disk: Installation:
 Clone this repository and install by typing:
@@ -60,7 +60,7 @@ npm run format
 }
 ```
 
-## :file_folder: Use:
+## :file_folder: Dependencies:
 ```JSON
 "devDependencies": {
     "@babel/core": "^7.14.5",
