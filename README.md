@@ -62,7 +62,7 @@ npm run format
 
 ## :file_folder: Dependencies:
 ```JSON
-"devDependencies": {
+  "devDependencies": {
     "@babel/core": "^7.14.5",
     "@babel/eslint-parser": "^7.14.7",
     "@babel/plugin-syntax-top-level-await": "^7.14.5",

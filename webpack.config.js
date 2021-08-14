@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const webpack = require("webpack");
+//const webpack = require("webpack");
 const path = require('path');
 
 module.exports = {
@@ -10,10 +10,16 @@ module.exports = {
   output: {
     filename: 'bundle.min.js',
     path: path.resolve(__dirname, `dist`),
+    publicPath: '/dist/',
     assetModuleFilename: 'assets/[name][ext][query]',
+    clean: true,
   },
   devServer: {
     contentBase: path.resolve(__dirname, `dist`),
+    hot: true,
+    historyApiFallback: {
+      index: 'index.html',
+    },
   },
   devtool: 'source-map',
   experiments: {
