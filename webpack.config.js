@@ -10,12 +10,14 @@ module.exports = {
   output: {
     filename: 'bundle.min.js',
     path: path.resolve(__dirname, `dist`),
-    publicPath: '/dist/',
     assetModuleFilename: 'assets/[name][ext][query]',
     clean: true,
   },
   devServer: {
-    contentBase: path.resolve(__dirname, `dist`),
+    liveReload: true,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     hot: true,
     historyApiFallback: {
       index: 'index.html',
@@ -25,6 +27,7 @@ module.exports = {
   experiments: {
     topLevelAwait: true,
   },
+
   module: {
     rules: [
       {
